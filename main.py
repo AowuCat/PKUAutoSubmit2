@@ -190,8 +190,8 @@ def fill_blanks(str_list):
     time.sleep(0.1)
     print(f"手机号: {str_list[11]}")
 
-    # 宿舍园区
-    xpath = "//label[text()='宿舍园区']/..//input"
+    # 园区
+    xpath = "//label[text()='园区']/..//input"
     driver.find_element_by_xpath(xpath).click()
     time.sleep(0.1)
     xpath = f"//span[text()='无宿舍']/../..//span[text()='{str_list[12]}']"
