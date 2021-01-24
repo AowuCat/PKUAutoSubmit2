@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as ec
 from urllib.parse import quote
 import warnings
+import os
 warnings.filterwarnings('ignore')
 
 
@@ -233,7 +234,10 @@ def fill_blanks(str_list):
 
 if __name__ == "__main__":
     path = ""
-    driver_path = path + "phantomjs.exe"
+    if os.name == "nt":
+        driver_path = path + "phantomjs.exe"
+    else:
+        driver_path = path + "phantomjs"
     driver = webdriver.PhantomJS(executable_path=driver_path)
     driver.set_window_size(1920, 1080)
     print("初始化完成")
