@@ -1,4 +1,5 @@
 # PKUAutoSubmit2
+## 这个项目太老了，等[新坑](https://github.com/AowuCat/PKUAutoSubmitEnhancedEdition)
 对“云战役”，程序会自动判断当前状态并选择最通常的状态提交。<br>
 （已到校：留宿宿舍、不出校、健康；未到校：非当日返京、健康）<br>
 **选项不支持自定义，请确认您当前无异动且健康后再使用，若有变化请手动提交！** <br><br>
